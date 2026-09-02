@@ -129,6 +129,23 @@ footer .src{font-family:var(--mono);font-size:11px;line-height:2;word-break:brea
 </style>
 <style>:root{--key:#0E6D6A}</style>
 
+<style>
+.cover-wrap{position:relative;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.cover{display:block;width:100%;height:clamp(200px,40vh,440px);object-fit:cover}
+.cover-cap{position:absolute;right:9px;bottom:8px;font-family:var(--mono);font-size:9px;
+  color:#fff;background:rgba(0,0,0,.58);padding:3px 7px;letter-spacing:.03em}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:14px}
+figure.shot{margin:0;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+figure.shot img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+figure.shot figcaption{padding:9px 11px;font-size:.85rem;color:var(--ink-soft);line-height:1.45}
+figure.shot .cr{display:block;font-family:var(--mono);font-size:8.5px;color:var(--ink-faint);
+  margin-top:5px;letter-spacing:.02em}
+.credits-list{font-family:var(--mono);font-size:10px;line-height:1.95;columns:2;column-gap:24px;
+  margin:0 0 14px;padding-left:15px}
+.credits-list li{break-inside:avoid}
+@media(max-width:640px){.credits-list{columns:1}}
+</style>
+
 <header class="top"><div class="wrap">
 <div class="eyebrow">Dossier de rota · 14–28 dez 2026 · três adultos</div>
 <h1>Omã em 4x4</h1>
@@ -141,8 +158,13 @@ footer .src{font-family:var(--mono);font-size:11px;line-height:2;word-break:brea
 <div><div class="v">3 009</div><div class="k">m no ponto alto</div></div>
 </div></div></header>
 
+<div class="cover-wrap">
+<img class="cover" src="img/hero.jpg" alt="Jebel Misht, nas montanhas Hajar" width="1400" height="788" loading="eager">
+<span class="cover-cap">love2bike · CC BY-SA 4.0</span>
+</div>
+
 <nav class="jump"><div class="wide"><ol>
-<li><a href="#s1">Resumo</a></li><li><a href="#s2">Itinerário</a></li><li><a href="#s3">Dormir</a></li>
+<li><a href="#s1">Resumo</a></li><li><a href="#sgal">Galeria</a></li><li><a href="#s2">Itinerário</a></li><li><a href="#s3">Dormir</a></li>
 <li><a href="#s4">Orçamento</a></li><li><a href="#s5">Visto &amp; logística</a></li><li><a href="#s6">Segurança</a></li>
 <li><a href="#s7">Meteorologia</a></li><li><a href="#s8">Plano B</a></li><li><a href="#s9">Veredicto</a></li>
 </ol></div></nav>
@@ -154,6 +176,24 @@ footer .src{font-family:var(--mono);font-size:11px;line-height:2;word-break:brea
 <p>A lógica de custo é o oposto da Namíbia: <b>o país não cobra pelas paisagens e não cobra pelas dormidas</b>. O campismo selvagem é legal em todo o território, a gasolina custa cerca de <b>€0,54 o litro</b> e não há taxas de parque. O único gasto grande em terra é o 4x4 — e mesmo esse divide por três.</p>
 <div class="note"><span class="l">Para quem é</span>Três adultos com carta, à-vontade com pista de terra e com exposição a sério (o Balcony Walk e a subida ao Wadi Bani Awf não têm corrimões). Zero interesse em resorts. Autonomia total: água, cozinha e tenda próprias.</div>
 </div></section>
+
+
+<section id="sgal"><div class="wide">
+<h2><span class="n">Galeria</span>Os sítios, em fotografia</h2>
+<p class="sub">Imagens de licença livre do Wikimedia Commons. Créditos completos no rodapé.</p>
+<div class="gal">
+<figure class="shot"><img src="img/jebelshams.jpg" alt="A parede do Wadi Ghul vista do Jebel Shams — o Balcony Walk segue a meia altura" width="1400" height="933" loading="lazy"><figcaption>A parede do Wadi Ghul vista do Jebel Shams — o Balcony Walk segue a meia altura<span class="cr">Andries Oudshoorn · CC BY-SA 2.0</span></figcaption></figure>
+<figure class="shot"><img src="img/wahiba.jpg" alt="As dunas do Wahiba Sands" width="1400" height="933" loading="lazy"><figcaption>As dunas do Wahiba Sands<span class="cr">Andries Oudshoorn · CC BY-SA 2.0</span></figcaption></figure>
+<figure class="shot"><img src="img/nizwa.jpg" alt="O forte de Nizwa e o minarete da mesquita de sexta-feira" width="1400" height="925" loading="lazy"><figcaption>O forte de Nizwa e o minarete da mesquita de sexta-feira<span class="cr">Martin Falbisoner · CC BY-SA 4.0</span></figcaption></figure>
+<figure class="shot"><img src="img/bahla.jpg" alt="Bahla — forte de adobe classificado pela UNESCO" width="1400" height="1050" loading="lazy"><figcaption>Bahla — forte de adobe classificado pela UNESCO<span class="cr">Dudva · CC BY-SA 4.0</span></figcaption></figure>
+<figure class="shot"><img src="img/misfat.jpg" alt="Misfat al Abriyeen, casas de pedra sobre o palmeiral" width="1400" height="1050" loading="lazy"><figcaption>Misfat al Abriyeen, casas de pedra sobre o palmeiral<span class="cr">Ji-Elle · CC BY-SA 3.0</span></figcaption></figure>
+<figure class="shot"><img src="img/wadishab.jpg" alt="Wadi Shab, a caminho da gruta com a cascata" width="1400" height="930" loading="lazy"><figcaption>Wadi Shab, a caminho da gruta com a cascata<span class="cr">albinfo · CC BY-SA 4.0</span></figcaption></figure>
+<figure class="shot"><img src="img/wadibanikhalid.jpg" alt="As piscinas do Wadi Bani Khalid" width="1400" height="933" loading="lazy"><figcaption>As piscinas do Wadi Bani Khalid<span class="cr">Diego Delso · CC BY-SA 4.0</span></figcaption></figure>
+<figure class="shot"><img src="img/birkat.jpg" alt="O palmeiral de Birkat al-Mawz" width="1400" height="933" loading="lazy"><figcaption>O palmeiral de Birkat al-Mawz<span class="cr">Andries Oudshoorn · CC BY-SA 2.0</span></figcaption></figure>
+<figure class="shot"><img src="img/jebelakhdar.jpg" alt="Os terraços do Jebel Akhdar, a 2 000 m" width="1400" height="933" loading="lazy"><figcaption>Os terraços do Jebel Akhdar, a 2 000 m<span class="cr">Andries Oudshoorn · CC BY-SA 2.0</span></figcaption></figure>
+<figure class="shot"><img src="img/nakhal.jpg" alt="O forte de Nakhal, erguido sobre o afloramento que lhe serve de fundação" width="1400" height="1048" loading="lazy"><figcaption>O forte de Nakhal, erguido sobre o afloramento que lhe serve de fundação<span class="cr">Mark Hills from London, England · CC BY 2.0</span></figcaption></figure>
+<figure class="shot"><img src="img/muscat.jpg" alt="O tecto da Grande Mesquita do Sultão Qaboos, Mascate" width="1400" height="933" loading="lazy"><figcaption>O tecto da Grande Mesquita do Sultão Qaboos, Mascate<span class="cr">Rrburke · CC BY-SA 4.0</span></figcaption></figure>
+</div></div></section>
 
 <section id="s2"><div class="wide">
 <h2><span class="n">02</span>Itinerário dia a dia</h2>
@@ -326,6 +366,8 @@ footer .src{font-family:var(--mono);font-size:11px;line-height:2;word-break:brea
 
 <footer><div class="wide">
 <p>Guia de campo · Omã em 4x4 · 14–28 de dezembro de 2026 · três adultos · preços de referência de setembro de 2026 (1 OMR ≈ €2,24)</p>
+<p style="font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px">Fotografias · Wikimedia Commons (reutilização com atribuição)</p>
+<ul class="credits-list"><li><a href="https://commons.wikimedia.org/wiki/File:Bahla_Fort_in_Oman_2.JPG" target="_blank" rel="noopener">Dudva</a> — CC BY-SA 4.0 · bahla</li><li><a href="https://commons.wikimedia.org/wiki/File:Birkat_al-Mawz.jpg" target="_blank" rel="noopener">Andries Oudshoorn</a> — CC BY-SA 2.0 · birkat</li><li><a href="https://commons.wikimedia.org/wiki/File:Dschabal_Mischt_(Jebel_Misht,_Kamm-Berg),_Oman_-_Hadschar-Gebirge_01.jpg" target="_blank" rel="noopener">love2bike</a> — CC BY-SA 4.0 · hero</li><li><a href="https://commons.wikimedia.org/wiki/File:Jebel_Akhdar.jpg" target="_blank" rel="noopener">Andries Oudshoorn</a> — CC BY-SA 2.0 · jebelakhdar</li><li><a href="https://commons.wikimedia.org/wiki/File:Jebel_Shams_(2).jpg" target="_blank" rel="noopener">Andries Oudshoorn</a> — CC BY-SA 2.0 · jebelshams</li><li><a href="https://commons.wikimedia.org/wiki/File:Misfah_(14).JPG" target="_blank" rel="noopener">Ji-Elle</a> — CC BY-SA 3.0 · misfat</li><li><a href="https://commons.wikimedia.org/wiki/File:Sultan_Qaboos_Grand_Mosque_Muscat_06.JPG" target="_blank" rel="noopener">Rrburke</a> — CC BY-SA 4.0 · muscat</li><li><a href="https://commons.wikimedia.org/wiki/File:Nakhal_Fort_1.jpg" target="_blank" rel="noopener">Mark Hills from London, England</a> — CC BY 2.0 · nakhal</li><li><a href="https://commons.wikimedia.org/wiki/File:Nizwa_Fort_and_Minaret_of_Friday_Mosque.JPG" target="_blank" rel="noopener">Martin Falbisoner</a> — CC BY-SA 4.0 · nizwa</li><li><a href="https://commons.wikimedia.org/wiki/File:Wadi_Bani_Khalid,_Om%C3%A1n,_2024-08-17,_DD_24.jpg" target="_blank" rel="noopener">Diego Delso</a> — CC BY-SA 4.0 · wadibanikhalid</li><li><a href="https://commons.wikimedia.org/wiki/File:Wadi_Shab_2.jpg" target="_blank" rel="noopener">albinfo</a> — CC BY-SA 4.0 · wadishab</li><li><a href="https://commons.wikimedia.org/wiki/File:Wahiba_Sands_(12).jpg" target="_blank" rel="noopener">Andries Oudshoorn</a> — CC BY-SA 2.0 · wahiba</li></ul>
 <p class="src"><b>Fontes:</b>
 gov.uk/foreign-travel-advice/oman/safety-and-security ·
 oman-spirit.com/guides/wild-camping-oman ·
